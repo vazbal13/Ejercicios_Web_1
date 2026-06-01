@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entorno Git</title>
+    <link
+      rel="icon"
+      type="image"
+      href="https://practicum-content.s3.us-west-1.amazonaws.com/resources/Sprint_3__Development_Flow_1740394993_1764360571.svg"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <header class="A">
+    <h1 class="A-1">Organiza y publica tu proyecto en git</h1>
+    <li>
+      |Habilidades sociales (soft skills): como técnicas para aprender de tus
+      errores.
+    </li>
+    <li>|Configurar un entorno de desarrollo local.</li>
+    <li>|Buenas prácticas para un proyecto bien organizado.</li>
+    <li>|Trabajar con Git y GitHub usando la línea de comandos.</li>
+    <li>|DevTools.</li>
+    <li>|Crear y dar estilo a formularios.</li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_3_refactored/es/V10/3.1.2.1ES.png"
+      alt="La biblioteca"
+    />
+    <h2 class="A-2">
+      Como pensar como
+      <a
+        class="A-a1"
+        target="_blank"
+        href="https://tripleten.com/trainer/web/lesson/68372724-eca0-477d-a563-b220562f6018/"
+        >un desarrollador</a
+      >
+    </h2>
+    <li>
+      ¿Me estoy desviando? Considera si aquello en lo que estás trabajando en
+      este momento te ayudará a subir de nivel las habilidades necesarias para
+      ser un desarrollador web profesional.
+    </li>
+    <li>
+      ¿Puedo explicarle un error que he cometido a un amigo o a un patito de
+      goma? Pon a prueba tu conocimiento tratando de simplificarlo todo
+      utilizando lenguaje sencillo, para que puedas entender por completo tus
+      errores. Esto te ayudará a evitar cometer el mismo error en el futuro, o
+      te dará una pista sobre las habilidades que necesites aprender o pulir.
+    </li>
+    <li>
+      ¿Por qué me ha llevado tanto tiempo encontrar una solución? Cuando tardes
+      mucho en solucionar un problema, piensa en qué fue lo que te demoró. Trata
+      de analizar el proceso. Esto te ayudará a pensar en diferentes formas de
+      evitar retrasos similares en el futuro.
+    </li>
+    <li>
+      Cuando afronto un problema, ¿hago todo lo que está en mi mano para
+      solucionarlo? Asegúrate de que hayas hecho un esfuerzo suficiente tratando
+      de arreglarlo por ti mismo antes de pedirle ayuda a alguien.
+    </li>
+    <li>
+      ¿Me estoy complicando demasiado? Si te bloqueas con algún problema, piensa
+      que podría haber una solución simple que ya se ha intentado y probado.
+    </li>
+    <li>
+      ¿Es satisfactorio? ¿Te sientes satisfecho cuando solucionas un problema o
+      terminas un trabajo? Si no, intenta y piensa en maneras de cambiarlo.
+      ¡Cada victoria cuenta!
+    </li>
+    <h3>
+      Los
+      <a
+        class="A-a1"
+        target="_blank"
+        href="https://tripleten.com/trainer/web/lesson/ea3e71e2-a8eb-4f76-9fe9-296aa2261bcf/"
+        >errores</a
+      >
+    </h3>
+    <li>
+      |El fracaso es exactamente lo que les trajo el éxito.Gene Kranz, el líder
+      del “Tiger Team” de directores de vuelo, trajo la nave espacial Apolo 13
+      de regreso a la Tierra de manera segura el 17 de abril de 1970. El enfoque
+      que le ayudó a él y al equipo de la NASA fue el entrenamiento para el
+      fracaso. Cuando entrenaban para la misión lunar, trajeron testers
+      exigentes y los sometieron a todo tipo de escenarios haciendo que las
+      máquinas hicieran cosas inimaginables y fallaran una y otra vez; esto
+      ayudó al equipo a conocer los sistemas y ver qué más necesitaban
+      configurar y corregir durante el proceso. En la misión lunar de la vida
+      real, ya habían experimentado suficientes fallas como para estar bien
+      equipados para combatir algunos de los distintos errores que enfrentaron
+      durante el vuelo, así fue como pudieron superarlos y regresar sanos y
+      salvos a la Tierra.
+    </li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.us-west-1.amazonaws.com/resources/moved_Component_1_1_1635761855.png"
+      alt="La biblioteca"
+    />
+    <li>
+      La experiencia de Terry con los errores.Intenté convertirme en programador
+      muchas veces, tomé varios cursos en línea, pero nada parecía funcionar; al
+      final, ni siquiera terminé uno. Empecé a frustrarme y pensar que la
+      programación no era para mí o que el problema era yo. Estaba a punto de
+      rendirme, pero luego decidí esforzarme y averiguar por qué seguía
+      fracasando. Tenía que ser honesto conmigo mismo para seguir adelante.
+      Empecé a retroceder para analizar dónde me había equivocado exactamente;
+      tenía algunas teorías, pero quería que las probara alguien con más
+      experiencia que yo. Necesitaba a alguien que hubiera estado en mi
+      situación antes, por eso me reuní con Elise; ella me ayudó a identificar
+      mis puntos débiles. Antes, había comenzado cursos con C++, pero debería
+      haber estudiado primero JavaScript. Elise me explicó que C++ es demasiado
+      complicado para principiantes y eso puede ser muy desalentador. Cuando
+      cambié a JavaScript, comencé a avanzar, ¡y muy rápido! Ahora no me puedo
+      creer que estuviera a punto de rendirme, ¡pero esta vez no lo haré!
+    </li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.amazonaws.com/resources/Component_2_1696244171.png"
+      alt="La biblioteca"
+    />
+    <h4>
+      Cometer errores es parte de explorar; nos ayuda a ver el panorama general.
+      ¡No es un bug, es una característica! El conocimiento adquirido al cometer
+      errores ha llevado al éxito a algunas de las personas más inteligentes del
+      mundo:
+    </h4>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.amazonaws.com/resources/2.6.1.3ES_1696244311.png"
+      alt="errores"
+    />
+    <h4>Tu cerebro y los errores</h4>
+    <li>
+      |Cambiemos de perspectiva e intentemos comprender cómo el cerebro procesa
+      realmente nuestros errores. Para ilustrarlo, trata de encontrar el camino
+      más corto al centro:
+    </li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.amazonaws.com/resources/01_v01_1696244333.png"
+      alt=""
+    />
+    <li>
+      |🤔 ¿Cuántas veces lo has intentado? 🤔 Ok, quédate aquí. Ahora, intenta
+      llegar al centro usando la entrada en el lado opuesto del laberinto:
+    </li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.amazonaws.com/resources/02_v01_1696244391.png"
+      alt="laberinto"
+    />
+    <li>
+      |¿Cuántos intentos te tomó esta vez? Probablemente fue más fácil. De
+      hecho, cuantos más errores hayas cometido durante el primer intento, más
+      habrás explorado el laberinto y aprendido de él. Si seguimos pidiéndote
+      que hagas esto, por cuarta o quinta vez, podrías llegar al centro en un
+      abrir y cerrar de ojos. Esta verdad se aplica a prácticamente cualquier
+      campo: cuántos más errores cometes, más aprendes.
+    </li>
+    <h5>
+      La principal diferencia entre quienes aprenden de sus errores y quienes no
+      lo hacen, es tener la capacidad de: Detectar el error. Reconocerlo. Asumir
+      la responsabilidad sin culpar a otras personas. Aprender del error y hacer
+      las cosas de otra manera en el futuro.
+    </h5>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.amazonaws.com/resources/2.6.1ES_1696244421.png"
+      alt="ps"
+    />
+    <h5>
+      Empieza: comienza a tomar medidas, experimenta con distintos enfoques.
+      Para: deja de hacer lo que estaba mal. Algo "incorrecto" es algo que
+      simplemente no te funcionó; no necesariamente significa que en realidad
+      estabas haciendo algo mal. Sé honesto/a contigo, analiza lo que salió mal
+      y cuándo y dónde se revirtió. Está bien si aún no sabes la respuesta
+      exacta; bastará con que hagas una evaluación honesta. Continúa: haz lo que
+      sabes que te resulta útil. Siempre debes reflexionar sobre tu experiencia.
+      ¿Qué ha funcionado en el pasado y te ha dado los resultados deseados?
+      ¡Identifícalo y utilízalo!
+    </h5>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.amazonaws.com/resources/2.6.1.2ES_1696244451.png"
+      alt="h"
+    />
+    <h3>
+      ¿Qué es un
+      <a
+        href="https://tripleten.com/trainer/web/lesson/9640e263-106f-4be0-9212-1bd4d83023cf/"
+        >entorno</a
+      >
+      de desarrollo?
+    </h3>
+    <li>
+      |Cómo trabajar con archivos y carpetas usando la interfaz gráfica de tu
+      sistema operativo.
+    </li>
+    <li>|Instalación y uso básico de VS Code.</li>
+    <li>|Cómo ejecutar tu código en el navegador.</li>
+    <h3>
+      Trabajar con
+      <a
+        href="https://tripleten.com/trainer/web/lesson/13e2cd7d-f60e-46a7-8836-b844a66fe12b/"
+        >archivos</a
+      >
+    </h3>
+    <h4>Introducción al sistema de archivos</h4>
+    <li>
+      Trabajar con computadoras implica trabajar con muchos archivos, que son
+      objetos que almacenan datos. Hay archivos de todo tipo: algunos contienen
+      texto, otros almacenan imágenes o videos y algunos forman parte de la
+      infraestructura del sistema operativo. Estos archivos se guardan en el
+      sistema de archivos, que está organizado como una jerarquía de carpetas
+      anidadas, también llamadas directorios.
+    </li>
+    <li>Directorios especiales que debes conocer</li>
+    <li>
+      |La raíz (root) del sistema de archivos es el directorio donde se
+      encuentran todas las demás carpetas. Tu directorio de usuario o carpeta
+      personal es donde se guardan los archivos específicos de tu cuenta. Aunque
+      seas la única persona que usa la computadora, igual tienes un directorio
+      de usuario con tus archivos y configuraciones.
+    </li>
+    <h5>ctrl+shift+n</h5>
+    <h5>enter y backspace</h5>
+    <h5>ctrl+w</h5>
+    <h5>f2</h5>
+    <h5>ctrl+d</h5>
+    <h5>ctrl+s</h5>
+    <h5>ctrl+r</h5>
+    <h3>
+      Introducción
+      <a
+        href="https://tripleten.com/trainer/web/lesson/4cb97de2-8171-4654-99e3-20558f880f4e/"
+        >al caos y al orden</a
+      >
+    </h3>
+    <li>
+      |Estás viendo cómo procesa tu pedido el cyberbarista en la cafetería
+      Triple Espresso. Es increíble lo organizado que está su espacio de
+      trabajo. Hay una caja para cada tipo de grano y recipientes específicos
+      para la leche y los jarabes. De ese modo, el barista no tiene que estar
+      buscando los ingredientes por todas partes, y tu café está listo casi de
+      inmediato. ¿No sería genial si pudieras organizar tu código de una manera
+      similar?
+    </li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_3_refactored/es/V10/3.3.1.1ES.png"
+      alt="cafe"
+    />
+    <li>
+      En el desarrollo web sucede exactamente lo mismo. Cuando trabajas en una
+      sola página, es fácil mantener todo en la cabeza. Pero los proyectos de
+      gran envergadura requieren que escribamos muchas líneas de código. Si no
+      organizas tu proyecto, terminarás con una montaña de ingredientes
+      mezclados donde es imposible encontrar nada. En este capítulo, te daremos
+      las herramientas para poner orden en ese caos. Primero, veremos los
+      selectores de CSS y entenderemos por qué los nombres importan tanto.
+      Luego, exploraremos las metodologías que usan los equipos profesionales
+      para estructurar su código. Finalmente, aprenderemos a organizar tus
+      archivos en carpetas lógicas y a conectarlos entre sí. Al terminar, tu
+      proyecto dejará de ser una pila desordenada para convertirse en un sistema
+      limpio.
+    </li>
+    <h3>
+      Tipos de
+      <a
+        href="https://tripleten.com/trainer/web/lesson/7e2e26ea-277c-4646-b2f0-c60d919b5125/"
+        >selectores CSS</a
+      >
+    </h3>
+    <li>
+      |En esta lección, describiremos algunos de estos selectores. No tienes que
+      memorizarlos, ya que siempre puedes volver a consultar esta lección o, si
+      lo necesitas, echarle un vistazo a la
+      <a href="https://developer.mozilla.org/es/docs/Web/CSS/Guides/Selectors"
+        >lista completa</a
+      >
+      que mantiene MDN.
+    </li>
+    <h4>Selectores basicos</h4>
+    <p>
+      Ya te has encontrado con estos, pero los incluiremos aquí para mayor
+      claridad. Los elementos pueden seleccionarse con selectores de etiqueta
+      (como h1) y de clase (como .title):
+    </p>
+    <p>
+      También ten en cuenta que es posible seleccionar elementos por su id
+      usando el símbolo # :
+    </p>
+    <h4>Selector agrupado (lista de selector)</h4>
+    <p>
+      Este selector te permite aplicar un bloque de estilos a una lista de
+      selectores separada por comas. Un uso común es reiniciar los estilos
+      predeterminados en un grupo de elementos, así:
+    </p>
+    <h4>Selectores descendientes</h4>
+    <p>
+      Los selectores descendientes se escriben como un par de selectores
+      separados por espacios. Los estilos se aplican a elementos que coinciden
+      con selector child-selector, pero solo si están contenidos dentro de un
+      elemento padre que coincida con parent-selector.
+    </p>
+    <h4>Selector de hermanos adyacentes</h4>
+    <p>
+      El selector hermano adyacente es parecido al descendiente, pero funciona
+      sobre elementos hermanos adyacentes. Por ejemplo, si tienes este marcado:
+    </p>
+    <p>Puedes apuntar solo a la primera etiqueta .</p>
+    <h4>Selectores de atributos</h4>
+    <p>
+      Un selector de atributos se usa para seleccionar todos los elementos que
+      tienen un cierto atributo. La sintaxis se ve así:
+    </p>
+    <h3>
+      Organización de CSS:
+      <a
+        href="https://tripleten.com/trainer/web/lesson/70e560de-e992-4d69-adb4-f698a83041a1/"
+        >el problema de los nombres</a
+      >
+    </h3>
+    <li>
+      Cuando empiezas con proyectos pequeños, escribir CSS parece fácil. Pero a
+      medida que el código crece, mantenerlo ordenado se vuelve complicado. Sin
+      una estructura clara y buenas reglas de nombres, el CSS se desorganiza
+      rápido: aparecen conflictos, el mantenimiento se dificulta y el código se
+      vuelve frágil.
+    </li>
+    <li>
+      Aquí es donde entran en juego las metodologías CSS. Su objetivo es
+      proporcionar pautas y mejores prácticas para escribir código que sea
+      limpio y fácil de mantener, sin importar cuánto crezca el proyecto.
+    </li>
+    <h4>1. El conflicto de estilos</h4>
+    <li>
+      CSS tiene una característica que puede ser peligrosa si no se controla:
+      todos los estilos son globales. Imagina este escenario: estás creando un
+      elemento de "Login" y decides crear una clase .button para tu botón azul y
+      darle un estilo background-color: blue. Unos días después, estás
+      trabajando en la sección de "Contacto" y necesitas un botón diferente, tal
+      vez verde. Como el nombre .button es muy común y lógico, es probable que
+      tú (o un colega tuyo) intenten usar ese mismo nombre de clase .button de
+      nuevo al final de tu hoja de estilos (o incluso en otro archivo CSS
+      conectado al mismo HTML), pensando en este nuevo botón, pero ya con
+      background-color: green .
+    </li>
+    <li>
+      ¿Por qué ocurre esto? Los navegadores leen el código CSS de arriba abajo y
+      solo aplican los estilos después de haber leído toda la hoja de estilo.
+      Esto quiere decir que las reglas que estén escritas cerca del final del
+      documento anularán a las que están más cerca de su comienzo. Por lo tanto,
+      si tienes dos estilos que se contradicen entre sí, tendrá prioridad el que
+      aparezca en último lugar: el nuevo estilo .button (verde) sobrescribirá al
+      anterior. Tu botón de "Login", que debería ser azul, ahora se volverá
+      verde también. Al intentar crear algo nuevo, sin querer has roto lo que ya
+      funcionaba. Esto se vuelve una pesadilla en proyectos grandes: cambias una
+      línea de código en un lugar y rompes el diseño en otro lugar que ni
+      siquiera estabas mirandos
+    </li>
+    <h3>2. La trampa de la especificidad</h3>
+    <li>
+      Imagina que te das cuenta del error. Quieres que el botón de “Login”
+      vuelva a ser azul, pero no quieres borrar el código de abajo. Se puede
+      recurrir a una solución desesperada: escribir selectores muy largos y
+      complejos para "forzar" al navegador a aplicar el color azul, ganándole a
+      la regla verde por fuerza bruta. Esto se conoce como "guerras de
+      especificidad". El resultado puede verse así:
+    </li>
+    <li>
+      No es el mejor código, ¿verdad? Cuando un desarrollador nuevo se incorpora
+      al equipo, pasará más tiempo intentando descifrar qué hace ese código que
+      trabajando en él. Además, es un código muy frágil: si cambias mínimamente
+      el HTML (por ejemplo, quitas el h1 o el div), el selector dejará de
+      funcionar y el botón se volverá verde otra vez.
+    </li>
+    <h3>3. El problema de la mantenibilidad</h3>
+    <li>
+      Entonces, ¿qué podemos hacer para evitar esto? La respuesta lógica es que
+      necesitamos elegir un nombre de clase único para cada botón, de modo que
+      no entren en conflicto. ¿Pero cómo los llamaremos? ¿.blue-button y
+      .green-button?
+    </li>
+    <li>
+      Además de los conflictos técnicos, existe otro problema grave: la
+      dificultad para mantener el código a largo plazo. Nombres confusos pueden
+      convertir un cambio de diseño de 5 minutos en una tarea de varias horas.
+      El problema con nombres como .blue-button es que describen cómo se ve el
+      elemento hoy, pero no para qué sirve. Imagina este escenario: has usado la
+      clase .blue-button en 50 páginas diferentes de tu sitio. Mañana, el equipo
+      de diseño decide cambiar la imagen de marca y dice: "El azul ya no está de
+      moda. Ahora todos nuestros botones principales deben ser naranjas". Te
+      encontrarás con un dilema absurdo: o cambias el CSS para que .blue-button
+      tenga un fondo naranja (creando una clase que "miente" y confunde a
+      cualquiera que lea el código), o decides cambiar el nombre a
+      .orange-button, lo que te obligará a buscar y reemplazar manualmente ese
+      nombre en todos los archivos HTML.
+    </li>
+    <h3>Conclusión</h3>
+    <li>
+      Para evitar este caos de conflictos, selectores complejos y nombres
+      confusos, los desarrolladores han creado metodologías. Es parecido al
+      tráfico: si cada persona conduce como quiere, todo se vuelve un desorden.
+      Pero cuando todos siguen las mismas señales, todo fluye mucho mejor. En el
+      desarrollo web existen varias metodologías populares para poner orden. En
+      la próxima lección, veremos qué son exactamente, en qué se diferencian y
+      cuál te recomendamos utilizar para empezar tu camino en el desarrollo
+      profesional.
+    </li>
+    <h3>
+      <a
+        href="https://tripleten.com/trainer/web/lesson/84a6fd17-df0e-426b-b54c-d4d1e1c7d1ae/task/fb47aadf-7bfa-4a1a-bdd5-a0d43bff18b1/"
+        >Ejercicio</a
+      >
+    </h3>
+    <p>
+      Recuerda la sintaxis: bloque para el contenedor y bloque__elemento (con
+      dos guiones bajos) para las partes internas.
+    </p>
+    <p>llega hasta el dos</p>
+    <h6>
+      En el HTML, el atributo class debe tener dos clases separadas por un
+      espacio: profile profile_theme_dark. En el CSS, asegúrate de escribir el
+      selector del modificador con un guion bajo simple: .profile_theme_dark.
+    </h6>
+    <h3>
+      <a
+        href="https://tripleten.com/trainer/web/lesson/2de9fe99-98b6-4f08-8851-3024f8d982f8/task/23dfa62b-26d0-430a-a747-4ace079bfd54/"
+        >Ejercicio</a
+      >
+    </h3>
+    <li>
+      |Lo que se pidio. Vamos a crear una estructura de archivos jerárquica.
+      Coloca las hojas de estilo en el directorio /styles y las imágenes en el
+      directorio /images. Haz clic derecho en cualquier espacio en blanco en el
+      área "Archivos" y selecciona "Nueva carpeta" para crear una. Si estás en
+      una Mac, ingresa Ctrl + clic del mouse, o toca tu trackpad con dos dedos
+      juntos. A continuación, descomenta los elementos <link /> en los archivos
+      about.html, contact.html e index.html. Hemos escrito las rutas de los
+      archivos en estos enlaces para que coincidan con la estructura de archivos
+      que estás creando.
+    </li>
+    <li>
+      Los archivos de hojas de estilo son normalize.css y style.css. Los
+      archivos de imagen son logo_color.svg y logo_white.svg.
+    </li>
+    <h3>
+      <a
+        href="https://tripleten.com/trainer/web/lesson/c95213aa-ed73-4eb1-bb85-1eb8dccb115d/task/e1d54a46-078e-4713-9bdd-6f502da4245f/"
+        >Ejercicio</a
+      >
+    </h3>
+    <h4>Tarea1</h4>
+    <li>
+      Vamos a conectar las partes de nuestro proyecto entre sí. Comienza
+      conectando los archivos normalize.css y style.css con index.html. Haz esto
+      usando rutas relativas. Ten en cuenta que index.html se encuentra en el
+      directorio raíz de nuestro proyecto. Los archivos style.css y
+      normalize.css se encuentran en el directorio styles.
+    </li>
+    <li>
+      °Para cada elemento <link />, escribe la ruta en el atributo href.
+      Comienza tu ruta con ./ para subir un directorio desde tu ubicación actual
+      y / para separar el nombre de cada directorio en la ruta hacia el archivo
+      elegido.
+    </li>
+    <h4>Tarea2</h4>
+    <li>
+      Ahora vamos a terminar de vincular los archivos locales al proyecto. Todo
+      lo que queda es la imagen cat.svg en el directorio images. Agrega la
+      siguiente propiedad: background-image: url(''); al siguiente selector:
+      .grid Escribe la ruta hacia la imagen cat.svg dentro de la función url
+      ('') . Ten en cuenta que estamos indicando la ruta desde el archivo
+      style.css, que se encuentra en el directorio styles. Utiliza ../ para
+      subir un directorio.
+    </li>
+    <li>
+      Utiliza / para separar los nombres de los directorios que llevan al
+      archivo.
+    </li>
+    <h3>
+      <a
+        href="https://tripleten.com/trainer/web/lesson/00ad021d-4236-4dec-8c18-29bc9543de9b/task/dd143696-3950-4f98-9221-2140a5ae207e/"
+        >Ejercicio</a
+      >
+    </h3>
+    <li>
+      Houston, ¡tenemos un problema! Antes, nuestro proyecto tenía solo dos
+      archivos de estilos, style.css y normalize.css, conectados directamente al
+      index.html. Pero decidimos dividir los estilos en varios archivos,
+      siguiendo las últimas recomendaciones: ahora en la carpeta styles tenemos
+      index.css, normalize.css, page.css y grid.css, ¡pero nada funciona! Se
+      suponía que debía haber una foto de un gato con un bonito fondo de color
+      rosa grisáceo, pero ha desaparecido. Sin embargo, ahora sabemos cómo
+      aplicar la regla-at @import, así que podemos arreglarlo. En el archivo
+      index.css, agrega las reglas @import: primero para normalize.css y luego
+      para page.css y grid.css, para reunir todos los estilos.
+    </li>
+    <li>Esta es la sintaxis de la regla-at @import: @import url("file");</li>
+    <h3>
+      <a
+        href="https://tripleten.com/trainer/web/lesson/56341222-8ef4-4ff8-8733-6efe9fe7c4e3/task/c475e1a8-71fd-4a4e-8128-aae14fbe6d2b/"
+        >Ejercicio</a
+      >
+    </h3>
+    <li>
+      Vamos a agregar algunos estilos desde un servidor remoto. Implementemos un
+      tema oscuro para nuestras páginas web. Agrega un elemento link en cada
+      archivo .html y establece sus atributos href a
+      https://practicum-content.s3.us-west-1.amazonaws.com/web-code/libs/moved_dark-theme.css.
+    </li>
+    <li>
+      Utiliza la etiqueta link /> y recuerda utilizar el atributo rel con el
+      valor "stylesheet", y el atributo href con el valor que se muestra en la
+      descripción del ejercicio.
+    </li>
+    <h3>
+      Buenas prácticas:
+      <a
+        href="https://tripleten.com/trainer/web/lesson/a17e74e1-7f72-4b28-96bb-9f9ed72782f1/"
+        >conclusión</a
+      >
+    </h3>
+    <li>
+      ¡Felicidades! Has completado un capítulo muy importante para tu formación
+      como desarrollador profesional. Repasemos los pilares que hemos
+      construido. Empezamos este viaje observando el caos y entendiendo que, a
+      medida que los proyectos crecen, "hacer que funcione" no es suficiente.
+      Necesitamos sistemas. Metodologías CSS Aprendimos que una metodología es
+      simplemente un acuerdo de equipo para escribir código ordenado y
+      escalable. Exploramos dos enfoques principales: BEM (basado en componentes
+      independientes) y Utility-first (basado en clases pequeñas para estilos
+      visuales). Aunque ambos son válidos, te recomendamos empezar con BEM
+      porque te entrena a pensar en bloques reutilizables, una habilidad
+      esencial para el futuro. Recuerda su sintaxis clave: Bloque: .nav (el
+      componente independiente). Elemento: .nav__item (se conecta con dos
+      guiones bajos __). Modificador: Define una variación y se conecta con un
+      guion bajo _. Puede ser de dos tipos: Booleano: .nav__item_active (para
+      estados simples de sí/no). Clave-valor: .nav_theme_dark (para opciones
+      múltiples como temas o tamaños). Esta estructura hace que tu código sea
+      predecible y fácil de mantener. La arquitectura de archivos Aprendimos a
+      estructurar el proyecto jerárquicamente, separando hojas de estilo,
+      imágenes y fuentes en sus propias carpetas. Vimos que, aunque un solo
+      archivo style.css funciona para proyectos pequeños, a medida que crecen,
+      necesitamos más organización. Exploramos la estrategia de dividir el
+      código en archivos por componentes (como header.css) y conectarlos a
+      través de un archivo central index.css, manteniendo todo ordenado y fácil
+      de encontrar. Las conexiones técnicas Nada de esto funcionaría si no
+      supieras cómo conectar las piezas. Aprendimos a diferenciar entre rutas
+      absolutas (para recursos externos) y rutas relativas (./ y ../) para
+      navegar por la estructura de nuestro proyecto. Además, usamos la regla
+      @import para ensamblar todos los archivos CSS dispersos en un único
+      archivo central y vimos cómo conectar librerías externas a través de CDN.
+      ¿Qué sigue? Ya sabes cómo crear un proyecto limpio y modular en tu
+      computadora. ¿Pero qué haces si necesitas volver a una versión anterior o
+      compartir tu código sin enviar archivos por correo? En el próximo capítulo
+      aprenderás a usar Git, GitHub y la línea de comandos para restaurar
+      cambios y colaborar con otros desarrolladores como en un entorno
+      profesional. ¡Nos vemos en la terminal!
+    </li>
+    <h3>
+      <a
+        href="https://tripleten.com/trainer/web/lesson/43d94d46-c725-4773-9a26-d359b6850501/"
+        >Introducción</a
+      >
+    </h3>
+    <li>
+      ¿Qué vas a aprender? La línea de comandos: Una interfaz textual que te da
+      acceso a herramientas de desarrollo que son difíciles, o imposibles, de
+      usar solo con gráficos. Git: Un sistema de control de versiones. Imagina
+      que estás trabajando en tu proyecto y necesitas hacer cambios arriesgados.
+      Con Git, puedes guardar "puntos de control" (como en un videojuego). Si
+      algo sale mal, puedes volver atrás sin perder tu progreso. GitHub: La red
+      social del código. Es donde subirás tus proyectos para compartirlos con el
+      mundo, colaborar con otros desarrolladores y enviar tus tareas de
+      TripleTen de ahora en adelante. Todo esto tiene un objetivo práctico. Al
+      finalizar este capítulo, tomarás el proyecto de la cafetería Triple
+      Espresso que empezaste en el editor online, lo moverás a tu propia
+      computadora y lo convertirás en un repositorio profesional alojado en
+      GitHub.
+    </li>
+    <li>
+      💡 Te recomendamos mucho repetir todo lo que ves en los screencasts.
+      Instala lo mismo, haz clic en lo mismo y prueba las mismas acciones. Ver
+      el video ayuda, pero aprender de verdad ocurre cuando lo haces tú: eliges
+      los archivos, pruebas comandos y ves qué pasa. No pasa nada si te
+      equivocas; así es como se aprende.
+    </li>
+    <h3>
+      Instalación de
+      <a
+        href="https://tripleten.com/trainer/web/lesson/e93aacb3-945c-42d2-9147-42d8c2e31de2/"
+        >Git</a
+      >
+    </h3>
+    <li>
+      El primer paso es instalar Git. El proceso para hacerlo puede ser
+      diferente según el sistema operativo que utilices. Busca tu sistema
+      operativo en la lista de abajo y sigue las instrucciones para instalar Git
+      en tu equipo.
+    </li>
+    <h3>
+      ¿Qué es linea de
+      <a
+        href="https://tripleten.com/trainer/web/lesson/17b2196d-d7e7-4813-96d3-d48fb45e4fec/"
+        >comandos</a
+      >?
+    </h3>
+    <li>
+      Comencemos a explorar la línea de comandos explicando parte de la
+      terminología. Como dijimos en la lección de introducción, la línea de
+      comandos es una interfaz basada en texto para interactuar con una
+      computadora. Podemos acceder a esta interfaz a través de programas
+      llamados terminales o emuladores de terminal. Más específicamente, el
+      emulador de terminal interactúa con un shell, un programa que interpreta
+      las entradas de la línea de comandos y las traduce en instrucciones para
+      el sistema operativo. Los programas shell más comunes en macOS y Linux son
+      bash y zsh, los cuales comparten interfaces similares, así que sus
+      comandos, normalmente, son interoperables. Al emulador de terminal
+      predeterminado en estos sistemas se le conoce, simplemente, como Terminal.
+      Pero, los programas shell y terminal predeterminados en Windows son muy
+      distintos de bash y zsh. Es por ello que tuviste que instalar Git en la
+      lección anterior. Para los usuarios de Windows, Git Bash ya viene incluido
+      en Git, lo que proporciona un shell bash y un emulador de terminal en
+      Windows. Abrir la terminal Ahora, manos a la obra. Para abrir tu emulador
+      de terminal: En Windows, abre Git Bash.
+    </li>
+    <h4>ctrl+shift+ñ</h4>
+    <h3>
+      Navegando por tus
+      <a
+        href="https://tripleten.com/trainer/web/lesson/c07a00b1-012f-4039-a87f-45deb757736d/"
+        >archivos</a
+      >
+    </h3>
+    <li>
+      Muchas de las tareas más comunes de la línea de comandos implican
+      interactuar con archivos y carpetas. Es lo mismo que haces con el ratón:
+      entras a una carpeta, vuelves atrás, buscas algo. Estas tareas también se
+      gestionan en la línea de comandos. La diferencia es que aquí lo haces
+      escribiendo los comandos, y necesitamos conocer las "palabras mágicas"
+      para hacerlo.
+    </li>
+    <li>
+      Donde estoy
+      <h4>pwd</h4>
+      En la terminal, a veces puedes sentirte como si estuvieras en una
+      habitación a oscuras. Para saber exactamente dónde estás, usamos el
+      comando pwd. Sus siglas significan Print Working Directory ("mostrar
+      directorio de trabajo") y eso es exactamente lo que hace.
+    </li>
+    <h4>¿Qué hay aquí? (ls)</h4>
+    <li>
+      En una interfaz gráfica, al abrir una carpeta, ves los archivos
+      automáticamente. Este no es el caso en la línea de comandos. Para
+      "encender la luz" y ver qué hay dentro, utilizamos el comando ls (List):
+    </li>
+    <h4>Cómo moverse (cd)</h4>
+    <li>
+      A estas alturas ya sabes dónde estás y qué hay a tu alrededor. Ahora vamos
+      a aprender a desplazarnos usando el comando cd, que significa Change
+      Directory ("cambiar de directorio"). La sintaxis consiste en el comando
+      seguido por el directorio deseado, de esta manera: cd NOMBRE_CARPETA. Aquí
+      tienes un ejemplo:
+    </li>
+    <h4>Cómo volver al directorio anterior (..)</h4>
+    <li>
+      Hemos utilizado cd para entrar. Pero, ¿y si queremos salir? Para subir un
+      nivel (volver a la carpeta padre), escribimos dos puntos .. en lugar del
+      nombre de la carpeta:
+    </li>
+    <h4>Cómo volver al principio (~)</h4>
+    <li>
+      Si en algún momento te pierdes en la profundidad de tus carpetas, existe
+      un atajo de emergencia:
+    </li>
+    <h3>Cómo trabajar más rápido</h3>
+    <li>
+      El autocompletado (Tab) No tienes que escribir cada nombre completo.
+      Simplemente escribe las primeras letras y presiona la tecla Tab. Si
+      escribes cd Des y presionas Tab, la terminal completará automáticamente cd
+      Desktop/. ¡Úsalo siempre! Es más rápido y evita errores de escritura. El
+      historial (flechas) La terminal tiene memoria. Si quieres repetir un
+      comando que acabas de usar (o corregir uno en el que te equivocaste), no
+      lo escribas de nuevo. Presiona la flecha hacia arriba en la línea de
+      comandos, y aparecerá el último comando que ejecutaste. Lo único que
+      necesitas hacer después es presionar Enter para ejecutar el comando.
+    </li>
+    <h3>
+      Configuracion de
+      <a
+        href="https://tripleten.com/trainer/web/lesson/0b23c8ff-be60-4079-9475-549b60b4afaa/"
+        >Git</a
+      >
+    </h3>
+    <h4>git config --global user.name "vazbal13"</h4>
+    <h4>git config --global user.mail vazbal13@gmail.com</h4>
+    <h4>git config --global init.defaultBranch main</h4>
+    <h4>git config --list</h4>
+    <h3>
+      Crear un repositorio
+      <a
+        href="https://tripleten.com/trainer/web/lesson/eb91bcd6-1137-48b1-8d1c-effe8a89ea11/"
+        >local</a
+      >
+    </h3>
+    <li>
+      |Ya tienes las herramientas instaladas y sabes moverte por la terminal. Es
+      hora de unirlo todo. Hasta ahora, usabas una terminal externa (Git Bash o
+      Terminal). Pero en el día a día, los desarrolladores rara vez salen de su
+      editor de código. VS Code también viene con una terminal integrada, así
+      que a partir de ahora, usaremos esa terminal integrada de VS Code. En esta
+      lección, convertiremos una carpeta normal en un repositorio Git y
+      aprenderemos a preparar nuestros archivos para guardarlos.
+    </li>
+    <li>
+      💡 Recuerda seguir los screencasts paso a paso. Esta práctica es clave
+      para avanzar. Si algo no te queda claro o aparece un error, no te
+      preocupes: escríbenos en Discord y te ayudamos.
+    </li>
+  </header>
+  <body></body>
+</html>
