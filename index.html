@@ -824,6 +824,144 @@
     <li>git add -A</li>
     <li>git commit -m "TU CAMBIO"</li>
     <h4>git push</h4>
+    <li>para subir al repositorio</li>
+    <h4>git pull</h4>
+    <li>recomendacion para empezar a trabajar</li>
+    <h3>
+      Clonar un
+      <a
+        href="https://tripleten.com/trainer/web/lesson/e0332736-5f84-43e6-b9d1-0eb80892fdf4/"
+        >repositorio</a
+      >
+    </h3>
+    <li>
+      En la vida real la mayoría del tiempo ya hay un proyecto echo y se
+      descarga a este proceso se le llama clonar
+    </li>
+    <li>
+      Primero necesitamos algo que clonar vamos a git hub y checamos un
+      repositorio <a href="https://github.com/new">vacio o algo que clonar</a>
+    </li>
+    <li>cd ..</li>
+    <li>pwd</li>
+    <li>cd Proyectos</li>
+    <li>git clone DIRECCION COPIADA SSH</li>
+    <li>ls</li>
+    <li>cd clone-example</li>
+    <h4>code .</h4>
+    <li>git status</li>
+    <li>new file</li>
+    <li>index.html</li>
+    <li>git add -A</li>
+    <li>git commit -m "add index.html"</li>
+    <li>git push</li>
+    <h3>
+      Ignorar archivos con
+      <a
+        href="https://tripleten.com/trainer/web/lesson/2fa719de-78fa-4679-a502-10784f617bc2/"
+        >.gitignore</a
+      >
+    </h3>
+    <li>
+      A estas alturas, ya sabes cómo rastrear los cambios que se han hecho en
+      los archivos de un proyecto a través de Git, y empujarlos a la nube con
+      GitHub. Sin embargo, hay algunos archivos que no deben comprobarse en el
+      control de versiones. A veces, esto se debe a que el archivo contiene
+      secretos, como claves API o contraseñas. Definitivamente, ¡no quieres
+      empujar eso a GitHub! Otras veces, podrías no querer rastrear los cambios
+      en un archivo simplemente porque no lo necesitas. Por ejemplo, la mayoría
+      de proyectos se someten a varios tipos de optimización antes de ser
+      empujados a producción. Estas optimizaciones las llevan a cabo
+      herramientas automatizadas, las cuales transforman el código fuente de un
+      proyecto, pasando de algo con lo que los seres humanos trabajan fácilmente
+      a algo que tendrá un mejor desempeño en producción. Normalmente, este
+      código optimizado no se comprobará en el control de versiones, ya que
+      puedes construirlo de nuevo desde el código fuente. Y también están los
+      archivos .DS_Store (Desktop Service Store, o "Almacén de servicios de
+      escritorio", en español). Estos son archivos ocultos que macOS crea cada
+      vez que echas un vistazo dentro de una carpeta mediante el explorador de
+      archivos predeterminado de la GUI. No hay por qué comprobar estos archivos
+      en el control de versiones, y hacerlo podría incluso ser un riesgo de
+      seguridad (en inglés). Así que, ¿cómo lo resolvemos? Con un pequeño
+      archivo llamado .gitignore.
+    </li>
+    <h4>.gitignore</h4>
+    <h3>
+      Git en VS
+      <a
+        href="https://tripleten.com/trainer/web/lesson/5e41fcb7-a1e5-4266-8a12-c64bbaf880d2/"
+        >Code</a
+      >
+    </h3>
+    <li>
+      Hasta ahora, hemos realizado todo nuestro trabajo de Git en la terminal. Y
+      eso es excelente para entender realmente cómo funciona Git. Pero VS Code
+      también nos ofrece una interfaz gráfica para realizar las operaciones más
+      comunes de Git y visualizar los cambios. Dado que pasaremos mucho tiempo
+      trabajando en VS Code, tiene sentido saber cómo funcionan estas
+      herramientas.
+    </li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_3_refactored/es/V10/3.4.14.1ES.png"
+      alt="panel"
+    />
+    <li>U (Untracked): Archivo nuevo que Git aún no rastrea.</li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_3_refactored/es/V10/3.4.14.2ES.png"
+      alt="panel"
+    />
+    <li>M (Modified): Archivo existente que ha sido modificado.</li>
+    <h4>El panel Source Control</h4>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_3_refactored/es/V10/3.4.14.4ES.png"
+      alt="panel"
+    />
+    <li>
+      Preparar los archivos (stage): Haz clic en el icono + junto al archivo
+      para moverlo al área de staging.
+    </li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_3_refactored/es/V10/3.4.14.5ES.png"
+      alt="panel"
+    />
+    <li>
+      Deshacer preparación (unstage): Si te equivocaste, haz clic en el icono -
+      para sacar el archivo del área de staging.
+    </li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_3_refactored/es/V10/3.4.14.5ES.png"
+      alt="Panel"
+    />
+    <li>
+      Revisar cambios: Si haces clic en un archivo de la lista, se abrirá una
+      vista dividida (izquierda: original, derecha: cambios). Es ideal para
+      revisar tu código antes de guardarlo.
+    </li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_3_refactored/es/V10/3.4.14.6ES.png"
+      alt="panel"
+    />
+    <li>
+      Hacer commit: Escribe tu mensaje en el cuadro de texto y haz clic en el
+      botón Commit.
+    </li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_3_refactored/es/V10/3.4.14.7ES.png"
+      alt="Panel"
+    />
+    <li>La sección Graph</li>
+    <img
+      class="A-img1"
+      src="https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_3_refactored/es/V10/3.4.14.8ES.png"
+      alt="Panel"
+    />
   </header>
   <body></body>
 </html>
